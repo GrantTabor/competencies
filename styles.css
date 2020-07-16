@@ -1,0 +1,50 @@
+.box-model{
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    color: goldenrod;
+    background-color: black;
+    border: 10px solid;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+img {
+    height: 100px;
+    width: 150px;
+}
+
+.background-image{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvmiimOcGdL_gkZkMxq5EGj5np3d4aaffLPw&usqp=CAU");
+    background-repeat: no-repeat;
+    height: 100px;
+}
+.background-image div {
+    position: relative;
+
+    top: 50px;
+}
+.background-image p {
+    position: fixed;
+    bottom: 0px;
+}
+.background-image span {
+    position: absolute;
+    right: 500px;
+}
+.background-image>span {
+    color: red;
+}
+.background-image div+p{
+    color: royalblue;
+}
+.invisible {
+    display: none;
+}
+
+#float {
+    float: right;
+}
+
