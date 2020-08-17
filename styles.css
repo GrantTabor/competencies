@@ -1,50 +1,63 @@
-.box-model{
-    width: 100px;
+.box-model{ /*22C-2 */
+    width: 100px; /*24F */
     height: 200px;
-    margin: 10px;
-    padding: 10px;
-    color: goldenrod;
-    background-color: black;
-    border: 10px solid;
-    font-size: 30px;
-    font-weight: bold;
+    margin: 10px; /*24C*/
+    padding: 10px; /*24E */
+    color: goldenrod; /*23D-2 */
+    background-color: black; /*23E */
+    border: 10px solid; /*24D */
+    font-size: 30px; /*23D-3 */
+    font-weight: bold; /*23D-1 */
     font-family: cursive;
+    box-shadow: 5px 10px black; /*30C */
 }
 
-img {
+img { /*54E-2 */
     height: 100px;
     width: 150px;
 }
 
 .background-image{
+    /*23F */
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvmiimOcGdL_gkZkMxq5EGj5np3d4aaffLPw&usqp=CAU");
     background-repeat: no-repeat;
     height: 100px;
 }
-.background-image div {
-    position: relative;
+.background-image div { /*22C-3 */
+    position: relative; /*25C-1 */
 
     top: 50px;
 }
-.background-image p {
-    position: fixed;
+.background-image p { /*54C-1 */
+    position: fixed; /*25C-2 */
     bottom: 0px;
 }
-.background-image span {
-    position: absolute;
+.background-image span { /*54C-2 */
+    position: absolute; /*25C-2 */
     right: 500px;
 }
-.background-image>span {
+.background-image>span { /*22C-4 */
     color: red;
 }
-.background-image div+p{
+.background-image div+p{ /*22C-5 */ /*54C-3 */
     color: royalblue;
 }
 .invisible {
+    /*25F */
     display: none;
 }
 
-#float {
+#float { /*22C-1 */
+    /*25D */
     float: right;
 }
 
+[class^="list"]{ /*54J */
+    color: green;
+}
+
+@media screen and (min-width: 500px){ /*29C, 29D */
+    .box-model{
+        background-color: royalblue;
+    }
+}
